@@ -14,27 +14,31 @@ rjmp int1_handler
 ;Interrupt 0 Handler
 int0_handler:
 in R15, SREG
-ldi R17, 2
+ldi R23, 2
 loopy0:
 sbis PIND, 3
 rjmp turn_right
-dec R17
+dec R23
 brne loopy0
 out SREG, R15
 sei
+sbic PORTC, 6
+ret
 sleep
 
 ;Interrupt 1 Handler
 int1_handler:
 in R15, SREG
-ldi R17, 2
+ldi R23, 2
 loopy1:
 sbis PIND, 2
 rjmp turn_left
-dec R17
+dec R23
 brne loopy1
 out SREG, R15
 sei
+sbic PORTC, 6
+ret
 sleep
 
 ;Initialisierung
@@ -54,7 +58,7 @@ out PORTB, R16
 out DDRD, R16
 out PORTD, R16
 out ADCSRA, R16
-ldi R16, 0b01001010
+ldi R16, 0b01001010		;enabling idle mode and defining interrupts as falling edge sensitive
 out MCUCR, R16
 ldi R16, 0b11000000
 out GICR, R16
@@ -101,28 +105,6 @@ sbi PORTC, 6
 ldi ZH, HIGH($0000)
 ldi ZL, LOW($0000)
 ret
-
-;Routine zum Warten auf weitere Befehle
-wait:
-ldi R19, 15
-loop2: ldi R18, 255
-loop1: ldi R17, 255
-loop0:
-sbis PINB, 1
-rcall drink
-sbis PIND, 5
-rcall pay
-dec R17
-brne loop0
-dec R18
-brne loop1
-dec R19
-brne loop2
-rcall shutdown
-cbi PORTC, 5
-cbi PORTC, 6
-cbi PORTC, 7
-sleep
 
 ;Routine für Delay
 delay:
@@ -188,6 +170,65 @@ adiw X, 1
 movw Y, Z
 adiw Y, 12
 rcall write_2
+rcall test_999
+clr R16
+cpse XL, R16
+rjmp no_thousand
+cpse XH, R16
+rjmp no_thousand
+cpi R22, 0
+breq no_thousand
+rcall thousand
+no_thousand:
+rcall show
+out SREG, R15
+sei
+rjmp wait
+
+;Routine zum kleinen Würdigen von getrunkenen Vielfachen von 1000
+thousand:
+rcall clear
+rcall wake_smile
+rcall clear
+rcall wake
+ldi XH, 0x24
+ldi XL, 0b01111110
+rcall send
+rcall delay_eye
+rcall delay_eye
+ldi XH, 0x23
+rcall send
+rcall delay_eye
+rcall delay_eye
+ldi XH, 0x22
+rcall send
+rcall delay_eye
+rcall delay_eye
+ldi XH, 0x21
+ldi XL, 0b00110000
+rcall send
+ldi XH, 0x25
+ldi XL, 0b11111111
+rcall send
+ldi XH, 0x26
+rcall send
+rcall delay_eye
+rcall blink_smile
+ret
+
+;Error_handler
+error00:
+cli
+cbi PORTC, 6
+sbi PORTC, 5
+rcall err
+ldi R16, 0
+rcall dig3
+rcall dig4
+rcall delay_eye
+rcall delay_eye
+rcall delay_eye
+cbi PORTC, 5
 rcall show
 out SREG, R15
 sei
@@ -239,22 +280,30 @@ out SREG, R15
 sei
 rjmp wait
 
-;Error_handler
-error00:
-cli
+;Routine zum Warten auf weitere Befehle
+wait:
+ldi R19, 15
+loop2: ldi R18, 255
+loop1: ldi R17, 255
+loop0:
+sbis PINB, 1
+rjmp drink
+nop
+sbis PIND, 5
+rjmp pay
+nop
+dec R17
+brne loop0
+dec R18
+brne loop1
+dec R19
+brne loop2
+nop
+rcall shutdown
+cbi PORTC, 5
 cbi PORTC, 6
-sbi PORTC, 5
-rcall err
-ldi R16, 0
-rcall dig3
-rcall dig4
-rcall delay_eye
-rcall delay_eye
-rcall delay_eye
-rcall show
-out SREG, R15
-sei
-rjmp wait
+cbi PORTC, 7
+sleep
 
 ;Routine zur Anzeige der Werte im EEPROM an Adresse in Register Z über den MAX auf 5 Digits
 show:
@@ -264,9 +313,9 @@ rcall LED
 movw Y, Z
 adiw Y, 12
 rcall read_2
-rcall test_999
 mov R25, XH
 mov R24, XL
+rcall test_999
 rcall bin_to_dec
 rcall dig2
 mov R16, R17
@@ -286,7 +335,6 @@ sbr R16, 0b10000000
 rcall dig3
 rcall wake
 sbi PORTC, 6
-cbi PORTC, 5
 ret
 
 ;Routine zum Umrechnen des Binärwerts in X und Speicherung der Ziffern in R18, R17 & R16
@@ -489,18 +537,21 @@ sbrc YH, 1
 rjmp error02
 ret
 
-;Routine zum Test, ob Wert in X 999 übersteigt
+;Routine zum Test, ob Wert in X 1000 oder Vielfache erreicht, Speichern des Ergebnis in R22 und Bilden des Modulus auf X
 test_999:
-ldi R16, 0b11111100
-clr R17
-and R16, XH
-cpse R16, R17
-rjmp error01
-mov R25, XH
-mov R24, XL
-adiw R24, 24
-sbrc R25, 2
-rcall error01
+clr R22
+test_999_loop:
+cpi XL, 0xE8
+ldi R16, 0x03
+cpc XH, R16
+brmi test_999_end
+inc R22
+subi XL, 0xE8
+sbci XH, 0x03
+rjmp test_999_loop
+test_999_end:
+cpi R22, 0b00001000
+brpl error01
 ret
 
 ;Routine zum Test, ob Wert in X 99 übersteigt
@@ -525,6 +576,7 @@ rcall dig4
 rcall delay_eye
 rcall delay_eye
 rcall delay_eye
+cbi PORTC, 5
 out SREG, R15
 sei
 rjmp wait
@@ -542,6 +594,7 @@ rcall dig4
 rcall delay_eye
 rcall delay_eye
 rcall delay_eye
+cbi PORTC, 5
 out SREG, R15
 sei
 rjmp wait
@@ -588,7 +641,7 @@ ldi XL, 0b00000000
 rcall send
 ret
 
-;Befehlt zur Anzeige von Hello über
+;Befehl zur Anzeige von Hello über den Max
 Hi:
 rcall clear
 ldi XH, 0x60
@@ -637,6 +690,73 @@ rcall send
 rcall delay_eye
 ret
 
+;Befehl zur Anzeige eines aufwachenden Smileys über den MAX
+wake_smile:
+rcall clear
+ldi XH, 0x60
+ldi XL, 0b00000001
+rcall send
+ldi XH, 0x63
+rcall send
+ldi XH, 0x66
+ldi XL, 0b01111000
+rcall send
+rcall wake
+ldi R16, 5
+smile_loop0:
+rcall delay_eye
+dec R16
+brne smile_loop0
+ldi XH, 0x60
+ldi XL, 0b01100011
+rcall send
+ldi XH, 0x63
+rcall send
+ldi R16, 2
+smile_loop1:
+rcall delay_eye
+dec R16
+brne smile_loop1
+ldi XH, 0x66
+ldi XL, 0b10110100
+rcall send
+ldi R16, 3
+smile_loop2:
+rcall delay_eye
+dec R16
+brne smile_loop2
+ret
+
+;Befehl zur Anzeige eines blinkenden Smileys auf P1 des MAX, P0 bleibt erhalten und wird sonst angezeigt
+blink_smile:
+ldi XL, 0b00000000
+ldi XH, 0x41
+rcall delay
+rcall send
+ldi XH, 0x42
+rcall send
+ldi XH, 0x44
+rcall send
+ldi XH, 0x45
+rcall send
+ldi XH, 0x40
+ldi XL, 0b01100011
+rcall send
+ldi XH, 0x43
+rcall send
+ldi XH, 0x46
+ldi XL, 0b10110100
+rcall send
+ldi XH, 0x04
+ldi XL, 0b00001101
+rcall send
+ldi R16, 20
+smile_loop:
+rcall delay_eye
+dec R16
+brne smile_loop
+ret
+
 ;Befehl zur Anzeige von Err über den MAX
 err:
 rcall clear
@@ -678,22 +798,28 @@ ldi XL,0b00000000
 rcall send
 ret
 
-;Befehle zur Anzeige von decodierter Ziffer in R16 auf Digit 0, 1, 2, 3 oder 4
+;Befehle zur Anzeige von decodierter Ziffer in R16 auf Digit 0, 1, 2, 3 oder 4 inklusive binärer Tausenderanzeige via Punkt im Digit überprüft in R22
 dig0:
 ldi XH, 0x60
 mov XL, R16
+sbrc R22, 2
+sbr XL, 0b10000000
 rcall send
 ret
 
 dig1:
 ldi XH, 0x61
 mov XL, R16
+sbrc R22, 1
+sbr XL, 0b10000000
 rcall send
 ret
 
 dig2:
 ldi XH, 0x62
 mov XL, R16
+sbrc R22, 0
+sbr XL, 0b10000000
 rcall send
 ret
 
