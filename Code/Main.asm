@@ -14,27 +14,31 @@ rjmp int1_handler
 ;Interrupt 0 Handler
 int0_handler:
 in R15, SREG
-ldi R17, 2
+ldi R23, 2
 loopy0:
 sbis PIND, 3
 rjmp turn_right
-dec R17
+dec R23
 brne loopy0
 out SREG, R15
 sei
+sbic PORTC, 6
+ret
 sleep
 
 ;Interrupt 1 Handler
 int1_handler:
 in R15, SREG
-ldi R17, 2
+ldi R23, 2
 loopy1:
 sbis PIND, 2
 rjmp turn_left
-dec R17
+dec R23
 brne loopy1
 out SREG, R15
 sei
+sbic PORTC, 6
+ret
 sleep
 
 ;Initialisierung
@@ -54,7 +58,7 @@ out PORTB, R16
 out DDRD, R16
 out PORTD, R16
 out ADCSRA, R16
-ldi R16, 0b01001010
+ldi R16, 0b01001010		;enabling idle mode and defining interrupts as falling edge sensitive
 out MCUCR, R16
 ldi R16, 0b11000000
 out GICR, R16
@@ -75,7 +79,6 @@ sleep
 ;Reaktion auf Rechtsdrehen
 turn_right:
 in R15, SREG
-cbi PORTC, 5
 adiw Z, 0x0010
 sbrs ZH, 0
 sbis PORTC, 6
@@ -88,7 +91,6 @@ rjmp wait
 ;Reaktion auf Linksdrehen
 turn_left:
 in R15, SREG
-cbi PORTC, 5
 subi ZL, 0x10
 sbis PORTC, 6
 rcall first_int
@@ -129,7 +131,6 @@ ret
 
 ;Routine zum Erhöhen / Verringern des Drink-counters um 1
 drink:
-cbi PORTC, 5
 in R15, SREG
 cli
 movw Y, Z
@@ -179,7 +180,6 @@ cpi R22, 0
 breq no_thousand
 rcall thousand
 no_thousand:
-rcall delay
 rcall show
 out SREG, R15
 sei
@@ -236,7 +236,6 @@ rjmp wait
 
 ;Routine zum Erhöhen / Verringern des Bezahlt-counters um 25
 pay:
-cbi PORTC, 5
 in R15, SREG
 cli
 movw Y, Z
@@ -283,7 +282,6 @@ rjmp wait
 
 ;Routine zum Warten auf weitere Befehle
 wait:
-sbi PORTC, 5
 ldi R19, 15
 loop2: ldi R18, 255
 loop1: ldi R17, 255
