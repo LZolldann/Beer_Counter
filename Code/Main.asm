@@ -219,7 +219,6 @@ ret
 ;Error_handler
 error00:
 cli
-cbi PORTC, 6
 sbi PORTC, 5
 rcall err
 ldi R16, 0
@@ -334,7 +333,6 @@ sbic PORTC, 7
 sbr R16, 0b10000000
 rcall dig3
 rcall wake
-sbi PORTC, 6
 ret
 
 ;Routine zum Umrechnen des Binärwerts in X und Speicherung der Ziffern in R18, R17 & R16
@@ -566,7 +564,6 @@ ret
 ;Error_handler
 error01:
 cli
-cbi PORTC, 6
 sbi PORTC, 5
 rcall err
 ldi R16, 0
@@ -584,7 +581,6 @@ rjmp wait
 ;Error_handler
 error02:
 cli
-cbi PORTC, 6
 sbi PORTC, 5
 rcall err
 ldi R16, 0

@@ -26,14 +26,14 @@
   <turn_right><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>80</LINE></turn_right>
   <loopy1><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>33</LINE></loopy1>
   <turn_left><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>92</LINE></turn_left>
-  <clear><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>779</LINE></clear>
-  <Hi><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>645</LINE></Hi>
+  <clear><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>775</LINE></clear>
+  <Hi><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>641</LINE></Hi>
   <delay_eye><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>120</LINE></delay_eye>
-  <rise><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>665</LINE></rise>
-  <shutdown><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>610</LINE></shutdown>
+  <rise><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>661</LINE></rise>
+  <shutdown><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>606</LINE></shutdown>
   <first_int><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>103</LINE></first_int>
-  <show><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>309</LINE></show>
-  <wait><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>284</LINE></wait>
+  <show><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>308</LINE></show>
+  <wait><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>283</LINE></wait>
   <delay><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>110</LINE></delay>
   <loop01><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>112</LINE></loop01>
   <loop00><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>113</LINE></loop00>
@@ -41,89 +41,89 @@
   <loop11><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>123</LINE></loop11>
   <loop10><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>124</LINE></loop10>
   <drink><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>133</LINE></drink>
-  <read_2><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>515</LINE></read_2>
+  <read_2><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>513</LINE></read_2>
   <loop22><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>141</LINE></loop22>
   <loop21><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>142</LINE></loop21>
   <loop20><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>143</LINE></loop20>
   <drink_up><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>168</LINE></drink_up>
   <drink_down_end><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>156</LINE></drink_down_end>
   <error00><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>220</LINE></error00>
-  <write_2><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>485</LINE></write_2>
+  <write_2><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>483</LINE></write_2>
   <drink_down_loop><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>163</LINE></drink_down_loop>
-  <test_999><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>541</LINE></test_999>
+  <test_999><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>539</LINE></test_999>
   <no_thousand><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>182</LINE></no_thousand>
   <thousand><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>189</LINE></thousand>
-  <wake_smile><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>694</LINE></wake_smile>
-  <wake><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>603</LINE></wake>
-  <send><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>868</LINE></send>
-  <blink_smile><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>731</LINE></blink_smile>
-  <err><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>761</LINE></err>
-  <dig3><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>826</LINE></dig3>
-  <dig4><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>832</LINE></dig4>
-  <pay><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>238</LINE></pay>
-  <loop32><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>246</LINE></loop32>
-  <loop31><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>247</LINE></loop31>
-  <loop30><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>248</LINE></loop30>
-  <pay_up><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>273</LINE></pay_up>
-  <pay_down_end><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>261</LINE></pay_down_end>
-  <pay_down_loop><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>268</LINE></pay_down_loop>
-  <loop2><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>286</LINE></loop2>
-  <loop1><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>287</LINE></loop1>
-  <loop0><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>288</LINE></loop0>
-  <dec_on><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>631</LINE></dec_on>
-  <LED><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>839</LINE></LED>
-  <bin_to_dec><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>341</LINE></bin_to_dec>
-  <dig2><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>818</LINE></dig2>
-  <dig1><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>810</LINE></dig1>
-  <dig0><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>802</LINE></dig0>
-  <sub_signed><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>449</LINE></sub_signed>
-  <test_99><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>558</LINE></test_99>
-  <add_512><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>368</LINE></add_512>
-  <add_256><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>376</LINE></add_256>
-  <add_128><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>385</LINE></add_128>
-  <add_64><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>393</LINE></add_64>
-  <add_32><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>400</LINE></add_32>
-  <add_16><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>407</LINE></add_16>
-  <add_8><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>413</LINE></add_8>
-  <add_4><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>418</LINE></add_4>
-  <add_2><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>423</LINE></add_2>
-  <add_1><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>428</LINE></add_1>
-  <c_dec><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>432</LINE></c_dec>
-  <c_dec1><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>437</LINE></c_dec1>
-  <c_dec2><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>442</LINE></c_dec2>
-  <c_dec3><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>446</LINE></c_dec3>
-  <error01><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>567</LINE></error01>
-  <gr><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>460</LINE></gr>
-  <eq><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>455</LINE></eq>
-  <sm><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>473</LINE></sm>
-  <eq_eq><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>479</LINE></eq_eq>
-  <end_gr><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>469</LINE></end_gr>
-  <end_sub><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>482</LINE></end_sub>
-  <EEPROM_write><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>495</LINE></EEPROM_write>
-  <error02><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>585</LINE></error02>
-  <EEPROM_read><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>525</LINE></EEPROM_read>
-  <test_999_loop><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>543</LINE></test_999_loop>
-  <test_999_end><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>552</LINE></test_999_end>
-  <intense><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>617</LINE></intense>
-  <limit><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>624</LINE></limit>
-  <dec_off><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>638</LINE></dec_off>
-  <smile_loop0><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>706</LINE></smile_loop0>
-  <smile_loop1><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>716</LINE></smile_loop1>
-  <smile_loop2><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>724</LINE></smile_loop2>
-  <smile_loop><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>754</LINE></smile_loop>
-  <test_on><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>789</LINE></test_on>
-  <test_off><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>795</LINE></test_off>
-  <table><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>953</LINE></table>
-  <not_full><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>858</LINE></not_full>
-  <clock><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>941</LINE></clock>
-  <loop40><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>945</LINE></loop40>
-  <tab0><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>962</LINE></tab0>
-  <tab1><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>965</LINE></tab1>
-  <tab2><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>968</LINE></tab2>
-  <tab3><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>971</LINE></tab3>
-  <tab4><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>974</LINE></tab4>
-  <tab5><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>977</LINE></tab5>
-  <tab6><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>980</LINE></tab6>
-  <tab7><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>983</LINE></tab7>
+  <wake_smile><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>690</LINE></wake_smile>
+  <wake><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>599</LINE></wake>
+  <send><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>864</LINE></send>
+  <blink_smile><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>727</LINE></blink_smile>
+  <err><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>757</LINE></err>
+  <dig3><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>822</LINE></dig3>
+  <dig4><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>828</LINE></dig4>
+  <pay><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>237</LINE></pay>
+  <loop32><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>245</LINE></loop32>
+  <loop31><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>246</LINE></loop31>
+  <loop30><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>247</LINE></loop30>
+  <pay_up><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>272</LINE></pay_up>
+  <pay_down_end><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>260</LINE></pay_down_end>
+  <pay_down_loop><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>267</LINE></pay_down_loop>
+  <loop2><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>285</LINE></loop2>
+  <loop1><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>286</LINE></loop1>
+  <loop0><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>287</LINE></loop0>
+  <dec_on><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>627</LINE></dec_on>
+  <LED><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>835</LINE></LED>
+  <bin_to_dec><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>339</LINE></bin_to_dec>
+  <dig2><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>814</LINE></dig2>
+  <dig1><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>806</LINE></dig1>
+  <dig0><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>798</LINE></dig0>
+  <sub_signed><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>447</LINE></sub_signed>
+  <test_99><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>556</LINE></test_99>
+  <add_512><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>366</LINE></add_512>
+  <add_256><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>374</LINE></add_256>
+  <add_128><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>383</LINE></add_128>
+  <add_64><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>391</LINE></add_64>
+  <add_32><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>398</LINE></add_32>
+  <add_16><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>405</LINE></add_16>
+  <add_8><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>411</LINE></add_8>
+  <add_4><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>416</LINE></add_4>
+  <add_2><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>421</LINE></add_2>
+  <add_1><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>426</LINE></add_1>
+  <c_dec><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>430</LINE></c_dec>
+  <c_dec1><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>435</LINE></c_dec1>
+  <c_dec2><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>440</LINE></c_dec2>
+  <c_dec3><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>444</LINE></c_dec3>
+  <error01><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>565</LINE></error01>
+  <gr><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>458</LINE></gr>
+  <eq><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>453</LINE></eq>
+  <sm><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>471</LINE></sm>
+  <eq_eq><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>477</LINE></eq_eq>
+  <end_gr><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>467</LINE></end_gr>
+  <end_sub><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>480</LINE></end_sub>
+  <EEPROM_write><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>493</LINE></EEPROM_write>
+  <error02><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>582</LINE></error02>
+  <EEPROM_read><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>523</LINE></EEPROM_read>
+  <test_999_loop><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>541</LINE></test_999_loop>
+  <test_999_end><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>550</LINE></test_999_end>
+  <intense><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>613</LINE></intense>
+  <limit><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>620</LINE></limit>
+  <dec_off><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>634</LINE></dec_off>
+  <smile_loop0><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>702</LINE></smile_loop0>
+  <smile_loop1><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>712</LINE></smile_loop1>
+  <smile_loop2><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>720</LINE></smile_loop2>
+  <smile_loop><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>750</LINE></smile_loop>
+  <test_on><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>785</LINE></test_on>
+  <test_off><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>791</LINE></test_off>
+  <table><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>949</LINE></table>
+  <not_full><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>854</LINE></not_full>
+  <clock><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>937</LINE></clock>
+  <loop40><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>941</LINE></loop40>
+  <tab0><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>958</LINE></tab0>
+  <tab1><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>961</LINE></tab1>
+  <tab2><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>964</LINE></tab2>
+  <tab3><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>967</LINE></tab3>
+  <tab4><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>970</LINE></tab4>
+  <tab5><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>973</LINE></tab5>
+  <tab6><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>976</LINE></tab6>
+  <tab7><FILE>C:\Users\luca-\Documents\GitHub\Beer_Counter\Code\Main.asm</FILE><LINE>979</LINE></tab7>
  </LABELS>
 </ASSEMBLER_INFO>
